@@ -1,0 +1,34 @@
+{
+  "name": "mqtt_gateway_stress",
+  "total_duration_sec": 60,
+  "steps": [
+    {
+      "at_sec": 0,
+      "type": "packet_loss",
+      "param_a": 10,
+      "duration_sec": 10,
+      "iface": "eth0"
+    },
+    {
+      "at_sec": 15,
+      "type": "memory_pressure",
+      "param_a": 80,
+      "duration_sec": 10,
+      "iface": ""
+    },
+    {
+      "at_sec": 30,
+      "type": "cpu_throttle",
+      "param_a": 20,
+      "duration_sec": 15,
+      "iface": ""
+    },
+    {
+      "at_sec": 50,
+      "type": "packet_loss",
+      "param_a": 40,
+      "duration_sec": 10,
+      "iface": "eth0"
+    }
+  ]
+}
