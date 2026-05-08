@@ -77,9 +77,7 @@ class ObserverAnalyzer {
     report << "Intensity: " << request.intensity << "%\n";
     report << "Duration: " << request.duration_seconds << "s\n";
 
-    if (request.fault == "packet_loss" && request.intensity > 15.0) {
-      report << "App bị crash sau 2.3s khi packet loss > 15%\n";
-    } else if (observation.crashed) {
+    if (observation.crashed) {
       report << "App crashed after " << std::fixed << std::setprecision(1)
              << observation.crash_after_seconds << "s\n";
     } else {

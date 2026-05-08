@@ -15,7 +15,6 @@ ChaosNet là một framework chaos engineering tối giản cho Embedded Linux, 
 ## Build
 
 ```bash
-cd /home/runner/work/Chaos-Net/Chaos-Net
 make
 ```
 
@@ -32,7 +31,7 @@ Ví dụ output:
 Fault: packet_loss
 Intensity: 20%
 Duration: 10s
-App bị crash sau 2.3s khi packet loss > 15%
+App crashed after 2.3s
 Observation: Network stack exhausted retry budget.
 Timestamp: 2026-05-08T00:00:00Z
 ```
